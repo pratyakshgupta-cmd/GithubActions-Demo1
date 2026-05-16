@@ -19,7 +19,7 @@ jobs:
         run: |
           echo "This is job 2"
           echo "Jobs run in parallel by default"
-      -name: secound-job-secound-step
+      - name: secound-job-secound-step
         run: |
           echo "this is the job 2 step2"
           echo "thank you"
