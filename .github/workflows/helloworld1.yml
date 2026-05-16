@@ -1,0 +1,9 @@
+name: hello world1             #name of the workflow
+on: workflow_dispatch          # workflow running type
+jobs:                          # creating jobs
+  hello:                        #name of the job (as you can have multiple jobs inside this so we add name)
+    runs-on: ubuntu-latest      # run on this vm
+    steps:                      # what to run 
+      - name: hello step        # step -> under which step name is give as we can have multiple steps in it too
+        run: echo "welcome to github actions"
+        
