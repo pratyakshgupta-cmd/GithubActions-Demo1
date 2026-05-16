@@ -1,0 +1,13 @@
+name: runing multiple shell commands in this
+on: workflow_dispatch
+jobs:
+  jobname:
+    runs-on: ubuntu-latest
+    steps:
+    - name: stepname
+      run: |
+        echo "hello world 1 with multiple step step1"
+        echo "hello world 2 with multiple step step2"
+        echo "hello world 3 with multiple step step3"
+        echo "hello world 4 with multiple step step4"
+      
