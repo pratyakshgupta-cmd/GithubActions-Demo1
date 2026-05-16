@@ -1,4 +1,4 @@
-name: hello world1             #name of the workflow
+name: hello world printing            #name of the workflow
 on: workflow_dispatch          # workflow running type
 jobs:                          # creating jobs
   hello:                        #name of the job (as you can have multiple jobs inside this so we add name)
