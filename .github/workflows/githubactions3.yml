@@ -1,0 +1,25 @@
+name: multiple jobs running them all in parallel
+on: workflow_dispatch
+jobs:
+  jobnameliklo1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: stepkanameBuild
+        run: |
+          echo "hello run1"
+          echo "hello run2"
+      - name: stepkaname2
+        run: |
+          echo "hello run1"
+          echo "hello run2"
+  jobnameliklo2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: second-job-step
+        run: |
+          echo "This is job 2"
+          echo "Jobs run in parallel by default"
+      -name: secound-job-secound-step
+        run: |
+          echo "this is the job 2 step2"
+          echo "thank you"
